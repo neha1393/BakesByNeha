@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.env
+.venv
+venv/
+*.db
+*.sqlite3
+
+# React
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env.local
+
+# Editors
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
