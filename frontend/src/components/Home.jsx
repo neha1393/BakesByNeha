@@ -7,7 +7,7 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:8000/recipes")
+    fetch(`${import.meta.env.VITE_API_URL}/recipes`)
       .then((res) => res.json())
       .then((data) => {
         setRecipes(data);

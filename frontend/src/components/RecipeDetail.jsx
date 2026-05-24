@@ -8,7 +8,7 @@ function RecipeDetail() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/recipes/${name}`)
+    fetch(`${import.meta.env.VITE_API_URL}/recipes/${name}`)
       .then((res) => res.json())
       .then((data) => {
         setRecipe(data);

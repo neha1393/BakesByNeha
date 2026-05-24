@@ -10,7 +10,7 @@ function CostCalculator() {
 
   // Fetch stock from backend
   useEffect(() => {
-    fetch("http://localhost:8000/stock")
+    fetch(`${import.meta.env.VITE_API_URL}/stock`)
       .then((res) => res.json())
       .then((data) => setStock(data));
   }, []);
